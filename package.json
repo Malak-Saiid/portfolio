@@ -1,0 +1,36 @@
+{
+  "name": "malak-saiid-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build && vite build --ssr app/entry-server.tsx --outDir .prerender && node scripts/prerender.mjs",
+    "start": "vite preview --host 127.0.0.1",
+    "lint": "eslint . --max-warnings=0",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "framer-motion": "13.2.0",
+    "lucide-react": "1.45.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "@eslint/js": "^9",
+    "eslint-plugin-react-hooks": "^7",
+    "eslint-plugin-react-refresh": "^0.4",
+    "typescript-eslint": "^8",
+    "globals": "^16",
+    "vite": "latest",
+    "@vitejs/plugin-react": "latest"
+  },
+  "engines": { "node": ">=22.0.0" }
+}

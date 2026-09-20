@@ -1,0 +1,31 @@
+.footer { border-top: 1px solid var(--border); background: var(--bg); }
+.inner { padding-top: 3rem; }
+.top { display: flex; justify-content: space-between; gap: 2.5rem; padding-bottom: 2.5rem; }
+.brand { flex-shrink: 0; }
+.name { display: flex; align-items: center; gap: .65rem; color: var(--text); font-size: 1rem; font-weight: 600; letter-spacing: -.035em; }
+.monogram { display: flex; justify-content: center; align-items: center; width: 2rem; height: 2rem; border-radius: .6rem; border: 1px solid var(--border-strong); background: rgba(124,58,237,.12); color: var(--accent); font-size: 1.2rem; font-weight: 600; letter-spacing: -.1em; padding-right: .08em; }
+.monogram span { color: var(--purple); }
+.nameDot { color: var(--purple); margin-left: -.5rem; }
+.brand p { color: var(--secondary); font-size: .76rem; margin-top: .85rem; }
+.tagline { display: block; color: var(--muted); font-size: .68rem; margin-top: .35rem; }
+.links { display: flex; flex-direction: column; align-items: flex-end; gap: 1.5rem; }
+.navigation { display: flex; flex-wrap: wrap; gap: .8rem 1.3rem; justify-content: flex-end; max-width: 38rem; }
+.navigation a { color: var(--secondary); font-size: .74rem; transition: color .2s ease; }
+.navigation a:hover { color: var(--accent); }
+.socials { display: flex; flex-wrap: wrap; gap: 1.5rem; }
+.socials a { display: inline-flex; align-items: center; gap: .4rem; color: var(--muted); font-size: .69rem; transition: color .2s ease; }
+.socials a:hover { color: var(--accent); }
+.bottom { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .7rem; padding: 1.35rem 0; border-top: 1px solid var(--border); color: var(--muted); font-size: .64rem; }
+.bottom p { line-height: 1.6; }
+.bottom span { color: var(--secondary); }
+.bottom .divider { margin: 0 .65rem; color: var(--border-strong); }
+
+@media (max-width: 767px) {
+  .top { flex-direction: column; gap: 1.8rem; padding-bottom: 2rem; }
+  .links { align-items: flex-start; }
+  .navigation { justify-content: flex-start; gap: .9rem 1.1rem; }
+  .bottom { flex-direction: column; align-items: flex-start; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .navigation a, .socials a { transition: none; }
+}
